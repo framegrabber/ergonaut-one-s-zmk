@@ -110,10 +110,10 @@
         default_layer {
             label = "Default";
             bindings = <
-&kp Q  &kp W  &kp E  &kp R      &kp T         &kp Y           &kp U      &kp I      &kp O     &kp P
-&kp A  &kp S  &kp D  &kp F      &kp G         &kp H           &kp J      &kp K      &kp L     &kp SEMICOLON
-&kp Z  &kp X  &kp C  &kp V      &kp B         &kp N           &kp M      &kp COMMA  &kp DOT   &kp FSLH
-                     &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &to 1      &kp RCMD
+&kp Q  &kp W  &kp E  &kp R      &kp T         &kp Y            &kp U      &kp I      &kp O     &kp P
+&kp A  &kp S  &kp D  &kp F      &kp G         &kp H            &kp J      &kp K      &kp L     &kp SEMICOLON
+&kp Z  &kp X  &kp C  &kp V      &kp B         &kp N            &kp M      &kp COMMA  &kp DOT   &kp FSLH
+                     &kp LCTRL  &kp LEFT_ALT  &kp RIGHT_SHIFT  &kp SPACE  &to 1      &kp RCMD
             >;
 
             sensor-bindings =
@@ -124,10 +124,10 @@
         symbol_layer {
             label = "Symbols";
             bindings = <
-&kp ESC  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT     &kp CARET         &kp AMPERSAND         &kp ASTERISK           &kp EXCLAMATION    &kp BACKSPACE
-&kp TAB  &kp EQUAL    &kp PLUS   &kp MINUS   &kp UNDERSCORE  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp ENTER
-&to 4    &kp GRAVE    &kp TILDE  &kp PIPE    &kp BACKSLASH   &kp LEFT_BRACKET  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp RIGHT_BRACKET  &to 2
-                                 &kp X       &kp RCTRL       &to 0             &kp RIGHT_SHIFT       &kp SPACE              &to 3
+&kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp KP_MINUS       &kp PIPE       &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp DELETE
+&kp EXCLAMATION  &kp ASTERISK   &kp KP_DIVIDE     &kp MINUS          &kp AMPERSAND  &kp POUND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI    &kp DOUBLE_QUOTES
+&kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp AT     &kp COLON             &kp KP_COMMA           &kp PERIOD  &kp SINGLE_QUOTE
+                                                  &kp X              &kp RCTRL      &to 0      &kp RIGHT_SHIFT       &kp SPACE              &to 0
             >;
 
             sensor-bindings =
