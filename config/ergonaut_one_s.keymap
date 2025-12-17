@@ -31,20 +31,20 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp Q             &kp W               &kp E           &kp R           &kp T              &kp Y          &kp U            &kp I            &kp O                &kp P
-&hm LEFT_SHIFT A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G              &kp H          &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &hm RIGHT_SHIFT SEMI
-&kp Z             &kp X               &kp C           &kp V           &kp B              &kp N          &kp M            &kp COMMA        &kp DOT              &kp FSLH
-                                                      &lt MEDIA ESC   &lt NAV BACKSPACE  &lt MOUSE TAB  &lt SYM RET      &lt NUM SPACE    &lt FUN DEL
+&kp Q             &kp W               &kp E           &kp R           &kp T            &kp Y      &kp U            &kp I            &kp O                &kp P
+&hm LEFT_SHIFT A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G            &kp H      &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &hm RIGHT_SHIFT SEMI
+&kp Z             &kp X               &kp C           &kp V           &kp B            &kp N      &kp M            &kp COMMA        &kp DOT              &kp FSLH
+                                                      &lt 3 ESC       &lt 1 BACKSPACE  &lt 2 TAB  &lt 5 RET        &lt 4 SPACE      &lt 6 DEL
             >;
         };
 
         nav_layer {
             display-name = "NAV";
             bindings = <
-&none     &none     &none      &none      &none  &none     &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)
-&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp CAPS  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-&none     &none     &none      &none      &none  &kp INS   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
-                               &none      &none  &none     &kp RET    &kp BSPC   &kp DEL
+&none     &none     &none      &none      &tog 8  &none     &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none   &kp CAPS  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+&none     &none     &none      &none      &none   &kp INS   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+                               &none      &none   &none     &kp RET    &kp BSPC   &kp DEL
             >;
         };
 
@@ -54,7 +54,7 @@
 &none     &none     &none      &none      &none  &none  &none  &none  &none  &none
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &none  &none  &none  &none  &none
 &none     &none     &none      &none      &none  &none  &none  &none  &none  &none
-                               &mo ADJ    &none  &none  &none  &none  &none
+                               &mo 7      &none  &none  &none  &none  &none
             >;
         };
 
@@ -64,7 +64,7 @@
 &none     &none     &none      &none      &none  &kp LG(LS(N4))  &none       &kp C_BRI_DN  &kp C_BRI_UP  &none
 &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &none           &kp LSHFT   &kp C_VOL_DN  &kp C_VOL_UP  &kp LGUI
 &none     &none     &none      &none      &none  &none           &none       &none         &none         &none
-                               &none      &none  &mo ADJ         &kp C_STOP  &kp C_PP      &kp K_MUTE
+                               &none      &none  &mo 7           &kp C_STOP  &kp C_PP      &kp K_MUTE
             >;
         };
 
@@ -84,7 +84,7 @@
 &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC  &none      &none      &none      &none     &none
 &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS  &none      &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
 &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE  &none      &none      &none      &none     &none
-                                &kp LPAR   &kp RPAR  &kp UNDER  &none      &none      &mo ADJ
+                                &kp LPAR   &kp RPAR  &kp UNDER  &none      &none      &mo 7
             >;
         };
 
@@ -94,7 +94,7 @@
 &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN        &none    &none      &none      &none     &none
 &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK         &none    &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
 &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK  &none    &none      &none      &none     &none
-                         &kp K_APP  &kp SPACE        &kp TAB  &mo ADJ    &none      &none
+                         &kp K_APP  &kp SPACE        &kp TAB  &mo 7      &none      &none
             >;
         };
 
@@ -105,6 +105,16 @@
 &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &sys_reset    &bootloader     &bootloader     &sys_reset    &bt BT_NXT    &bt BT_PRV    &bt BT_CLR
 &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none         &studio_unlock  &studio_unlock  &none         &out OUT_USB  &out OUT_BLE  &out OUT_TOG
                                           &none         &none           &none           &none         &none         &none
+            >;
+        };
+
+        focal_layer {
+            display-name = "FOCAL";
+            bindings = <
+&kp V             &kp L               &kp H       &kp G       &kp K            &kp Q      &kp F       &kp O            &kp U                &kp J
+&hm LEFT_SHIFT S  &hm LEFT_CONTROL R  &hm LALT N  &hm LGUI T  &kp B            &kp Y      &hm RGUI C  &hm RIGHT_ALT A  &hm RIGHT_CONTROL E  &hm RIGHT_SHIFT I
+&kp Z             &kp X               &kp M       &kp D       &kp P            &kp APOS   &kp W       &kp DOT          &kp SEMI             &kp COMMA
+                                                  &lt 3 ESC   &lt 1 BACKSPACE  &lt 2 TAB  &lt 5 RET   &lt 4 SPACE      &lt 6 DEL
             >;
         };
     };
